@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6121CCEC1F2C2CA1009F04B2"
+               BuildableName = "PrefetchDemo.app"
+               BlueprintName = "PrefetchDemo"
+               ReferencedContainer = "container:PrefetchDemo.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6121CD051F2C2CA1009F04B2"
+               BuildableName = "PrefetchDemoTests.xctest"
+               BlueprintName = "PrefetchDemoTests"
+               ReferencedContainer = "container:PrefetchDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "6121CD101F2C2CA1009F04B2"
+               BuildableName = "PrefetchDemoUITests.xctest"
+               BlueprintName = "PrefetchDemoUITests"
+               ReferencedContainer = "container:PrefetchDemo.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6121CCEC1F2C2CA1009F04B2"
+            BuildableName = "PrefetchDemo.app"
+            BlueprintName = "PrefetchDemo"
+            ReferencedContainer = "container:PrefetchDemo.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6121CCEC1F2C2CA1009F04B2"
+            BuildableName = "PrefetchDemo.app"
+            BlueprintName = "PrefetchDemo"
+            ReferencedContainer = "container:PrefetchDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "6121CCEC1F2C2CA1009F04B2"
+            BuildableName = "PrefetchDemo.app"
+            BlueprintName = "PrefetchDemo"
+            ReferencedContainer = "container:PrefetchDemo.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
