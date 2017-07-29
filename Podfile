@@ -8,6 +8,9 @@ target 'PrefetchDemo' do
   pod 'Masonry'
   pod 'UITableView+FDTemplateLayoutCell'
   pod 'SDWebImage'
+  pod 'MJRefresh'
+  pod 'libextobjc/EXTScope'
+  pod 'libextobjc/EXTKeyPathCoding'
 
   target 'PrefetchDemoTests' do
     inherit! :search_paths

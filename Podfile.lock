@@ -1,20 +1,31 @@
 PODS:
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
   - Masonry (1.0.2)
+  - MJRefresh (3.1.12)
   - SDWebImage (4.0.0):
     - SDWebImage/Core (= 4.0.0)
   - SDWebImage/Core (4.0.0)
   - UITableView+FDTemplateLayoutCell (1.6)
 
 DEPENDENCIES:
+  - libextobjc/EXTKeyPathCoding
+  - libextobjc/EXTScope
   - Masonry
+  - MJRefresh
   - SDWebImage
   - UITableView+FDTemplateLayoutCell
 
 SPEC CHECKSUMS:
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   UITableView+FDTemplateLayoutCell: 5c949b4a5059c404b442926c0e80f81d10a2d66f
 
-PODFILE CHECKSUM: a4818799313160c1859556291fcd3f66a7d8617d
+PODFILE CHECKSUM: dbfaf906fdd9b2bb776223c43ee4d52ab1db8ec0
 
 COCOAPODS: 1.2.1
