@@ -22,6 +22,16 @@
 		6121CD281F2C30C0009F04B2 /* NSObject+Decroate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD271F2C30C0009F04B2 /* NSObject+Decroate.m */; };
 		6121CD2C1F2C313C009F04B2 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD2B1F2C313C009F04B2 /* Logger.m */; };
 		6121CD2F1F2C33A7009F04B2 /* MoviePosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD2E1F2C33A7009F04B2 /* MoviePosterCell.m */; };
+		6121CD3E1F2C42B8009F04B2 /* NTYScrollViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD321F2C42B8009F04B2 /* NTYScrollViewProxy.m */; };
+		6121CD3F1F2C42B8009F04B2 /* NTYTableViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD341F2C42B8009F04B2 /* NTYTableViewProxy.m */; };
+		6121CD401F2C42B8009F04B2 /* NTYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD371F2C42B8009F04B2 /* NTYTableViewCell.m */; };
+		6121CD411F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD391F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m */; };
+		6121CD421F2C42B8009F04B2 /* NTYCollectionViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD3B1F2C42B8009F04B2 /* NTYCollectionViewProxy.m */; };
+		6121CD431F2C42B8009F04B2 /* NTYSupportViewModelImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD3D1F2C42B8009F04B2 /* NTYSupportViewModelImpl.m */; };
+		6121CD471F2C4331009F04B2 /* NSArray+NTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD461F2C4331009F04B2 /* NSArray+NTYExtension.m */; };
+		6121CD4A1F2C433E009F04B2 /* UITableViewCell+NTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD491F2C433E009F04B2 /* UITableViewCell+NTYExtension.m */; };
+		6121CD4E1F2C4F4C009F04B2 /* Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD4D1F2C4F4C009F04B2 /* Dispatch.m */; };
+		6121CD511F2C4F93009F04B2 /* NSObject+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD501F2C4F93009F04B2 /* NSObject+Cast.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +81,28 @@
 		6121CD2B1F2C313C009F04B2 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		6121CD2D1F2C33A7009F04B2 /* MoviePosterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePosterCell.h; sourceTree = "<group>"; };
 		6121CD2E1F2C33A7009F04B2 /* MoviePosterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePosterCell.m; sourceTree = "<group>"; };
+		6121CD311F2C42B8009F04B2 /* NTYScrollViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYScrollViewProxy.h; sourceTree = "<group>"; };
+		6121CD321F2C42B8009F04B2 /* NTYScrollViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYScrollViewProxy.m; sourceTree = "<group>"; };
+		6121CD331F2C42B8009F04B2 /* NTYTableViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewProxy.h; sourceTree = "<group>"; };
+		6121CD341F2C42B8009F04B2 /* NTYTableViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewProxy.m; sourceTree = "<group>"; };
+		6121CD351F2C42B8009F04B2 /* NTYSupportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYSupportViewModel.h; sourceTree = "<group>"; };
+		6121CD361F2C42B8009F04B2 /* NTYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewCell.h; sourceTree = "<group>"; };
+		6121CD371F2C42B8009F04B2 /* NTYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewCell.m; sourceTree = "<group>"; };
+		6121CD381F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		6121CD391F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		6121CD3A1F2C42B8009F04B2 /* NTYCollectionViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYCollectionViewProxy.h; sourceTree = "<group>"; };
+		6121CD3B1F2C42B8009F04B2 /* NTYCollectionViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYCollectionViewProxy.m; sourceTree = "<group>"; };
+		6121CD3C1F2C42B8009F04B2 /* NTYSupportViewModelImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYSupportViewModelImpl.h; sourceTree = "<group>"; };
+		6121CD3D1F2C42B8009F04B2 /* NTYSupportViewModelImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYSupportViewModelImpl.m; sourceTree = "<group>"; };
+		6121CD451F2C4331009F04B2 /* NSArray+NTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NTYExtension.h"; sourceTree = "<group>"; };
+		6121CD461F2C4331009F04B2 /* NSArray+NTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NTYExtension.m"; sourceTree = "<group>"; };
+		6121CD481F2C433E009F04B2 /* UITableViewCell+NTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+NTYExtension.h"; sourceTree = "<group>"; };
+		6121CD491F2C433E009F04B2 /* UITableViewCell+NTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+NTYExtension.m"; sourceTree = "<group>"; };
+		6121CD4B1F2C4E4B009F04B2 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
+		6121CD4C1F2C4F4C009F04B2 /* Dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dispatch.h; sourceTree = "<group>"; };
+		6121CD4D1F2C4F4C009F04B2 /* Dispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dispatch.m; sourceTree = "<group>"; };
+		6121CD4F1F2C4F93009F04B2 /* NSObject+Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Cast.h"; sourceTree = "<group>"; };
+		6121CD501F2C4F93009F04B2 /* NSObject+Cast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Cast.m"; sourceTree = "<group>"; };
 		8A100307FA85A27432976C34 /* Pods-PrefetchDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrefetchDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrefetchDemoTests/Pods-PrefetchDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9B652533ED463C77BE4122D7 /* libPods-PrefetchDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrefetchDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3DCA289DFC498CDE62912A /* Pods-PrefetchDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrefetchDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrefetchDemoUITests/Pods-PrefetchDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -131,11 +163,7 @@
 		6121CCEF1F2C2CA1009F04B2 /* PrefetchDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6121CD2A1F2C313C009F04B2 /* Logger.h */,
-				6121CD2B1F2C313C009F04B2 /* Logger.m */,
-				6121CD291F2C30E4009F04B2 /* NTY_Macros.h */,
-				6121CD261F2C30C0009F04B2 /* NSObject+Decorate.h */,
-				6121CD271F2C30C0009F04B2 /* NSObject+Decroate.m */,
+				6121CD301F2C42A5009F04B2 /* Engine */,
 				6121CCF31F2C2CA1009F04B2 /* AppDelegate.h */,
 				6121CCF41F2C2CA1009F04B2 /* AppDelegate.m */,
 				6121CCF61F2C2CA1009F04B2 /* ViewController.h */,
@@ -156,6 +184,7 @@
 		6121CCF01F2C2CA1009F04B2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6121CD4B1F2C4E4B009F04B2 /* prefix.pch */,
 				6121CCF11F2C2CA1009F04B2 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -177,6 +206,47 @@
 				6121CD171F2C2CA1009F04B2 /* Info.plist */,
 			);
 			path = PrefetchDemoUITests;
+			sourceTree = "<group>";
+		};
+		6121CD301F2C42A5009F04B2 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				6121CD441F2C42BE009F04B2 /* Proxy */,
+				6121CD2A1F2C313C009F04B2 /* Logger.h */,
+				6121CD2B1F2C313C009F04B2 /* Logger.m */,
+				6121CD291F2C30E4009F04B2 /* NTY_Macros.h */,
+				6121CD261F2C30C0009F04B2 /* NSObject+Decorate.h */,
+				6121CD271F2C30C0009F04B2 /* NSObject+Decroate.m */,
+			);
+			name = Engine;
+			sourceTree = "<group>";
+		};
+		6121CD441F2C42BE009F04B2 /* Proxy */ = {
+			isa = PBXGroup;
+			children = (
+				6121CD4F1F2C4F93009F04B2 /* NSObject+Cast.h */,
+				6121CD501F2C4F93009F04B2 /* NSObject+Cast.m */,
+				6121CD4C1F2C4F4C009F04B2 /* Dispatch.h */,
+				6121CD4D1F2C4F4C009F04B2 /* Dispatch.m */,
+				6121CD481F2C433E009F04B2 /* UITableViewCell+NTYExtension.h */,
+				6121CD491F2C433E009F04B2 /* UITableViewCell+NTYExtension.m */,
+				6121CD451F2C4331009F04B2 /* NSArray+NTYExtension.h */,
+				6121CD461F2C4331009F04B2 /* NSArray+NTYExtension.m */,
+				6121CD311F2C42B8009F04B2 /* NTYScrollViewProxy.h */,
+				6121CD321F2C42B8009F04B2 /* NTYScrollViewProxy.m */,
+				6121CD331F2C42B8009F04B2 /* NTYTableViewProxy.h */,
+				6121CD341F2C42B8009F04B2 /* NTYTableViewProxy.m */,
+				6121CD351F2C42B8009F04B2 /* NTYSupportViewModel.h */,
+				6121CD361F2C42B8009F04B2 /* NTYTableViewCell.h */,
+				6121CD371F2C42B8009F04B2 /* NTYTableViewCell.m */,
+				6121CD381F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.h */,
+				6121CD391F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m */,
+				6121CD3A1F2C42B8009F04B2 /* NTYCollectionViewProxy.h */,
+				6121CD3B1F2C42B8009F04B2 /* NTYCollectionViewProxy.m */,
+				6121CD3C1F2C42B8009F04B2 /* NTYSupportViewModelImpl.h */,
+				6121CD3D1F2C42B8009F04B2 /* NTYSupportViewModelImpl.m */,
+			);
+			name = Proxy;
 			sourceTree = "<group>";
 		};
 		6F27F3B5150B9E71F5C59799 /* Frameworks */ = {
@@ -487,10 +557,20 @@
 			files = (
 				6121CD2F1F2C33A7009F04B2 /* MoviePosterCell.m in Sources */,
 				6121CD281F2C30C0009F04B2 /* NSObject+Decroate.m in Sources */,
+				6121CD431F2C42B8009F04B2 /* NTYSupportViewModelImpl.m in Sources */,
 				6121CD2C1F2C313C009F04B2 /* Logger.m in Sources */,
+				6121CD411F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m in Sources */,
+				6121CD4E1F2C4F4C009F04B2 /* Dispatch.m in Sources */,
+				6121CD401F2C42B8009F04B2 /* NTYTableViewCell.m in Sources */,
+				6121CD4A1F2C433E009F04B2 /* UITableViewCell+NTYExtension.m in Sources */,
 				6121CCF81F2C2CA1009F04B2 /* ViewController.m in Sources */,
+				6121CD511F2C4F93009F04B2 /* NSObject+Cast.m in Sources */,
+				6121CD3F1F2C42B8009F04B2 /* NTYTableViewProxy.m in Sources */,
+				6121CD421F2C42B8009F04B2 /* NTYCollectionViewProxy.m in Sources */,
 				6121CCF51F2C2CA1009F04B2 /* AppDelegate.m in Sources */,
+				6121CD471F2C4331009F04B2 /* NSArray+NTYExtension.m in Sources */,
 				6121CD251F2C2FA5009F04B2 /* DataProvider.m in Sources */,
+				6121CD3E1F2C42B8009F04B2 /* NTYScrollViewProxy.m in Sources */,
 				6121CCF21F2C2CA1009F04B2 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,6 +722,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UY8HGLAGYV;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $PROJECT_NAME/prefix.pch;
 				INFOPLIST_FILE = PrefetchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibestv.app.PrefetchDemo;
@@ -655,6 +737,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = UY8HGLAGYV;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $PROJECT_NAME/prefix.pch;
 				INFOPLIST_FILE = PrefetchDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ibestv.app.PrefetchDemo;

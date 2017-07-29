@@ -130,8 +130,7 @@
             @"http://i3.letvimg.com/lc06_search/201608/26/16/13/tmp_273218260928333094.jpg",
             @"http://i3.letvimg.com/lc05_search/201608/26/16/07/tmp_8503145987501992560.jpg",
             @"http://i0.letvimg.com/lc05_search/201608/26/15/58/tmp_4443593465330355487.jpg",
-            @"http://i0.letvimg.com/lc04_search/201608/26/15/51/tmp_1503257126048353517.jpg",
-            @"http://i3.letvimg.com/lc06_search/201608/26/16/13/tmp_273218260928333094.jpg"
+            @"http://i0.letvimg.com/lc04_search/201608/26/15/51/tmp_1503257126048353517.jpg"
         ];
     });
 
@@ -145,7 +144,7 @@ const NSUInteger PageSize = 20;
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         NSUInteger pageSize = MIN(PageSize, self.urls.count - pageIndex * PageSize);
-        NSArray *movies = [self.urls subarrayWithRange:NSMakeRange(pageIndex, pageSize)];
+        NSArray *movies = [self.urls subarrayWithRange:NSMakeRange(pageIndex * PageSize, pageSize)];
         completion(movies);
     });
 }

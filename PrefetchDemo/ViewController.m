@@ -10,10 +10,7 @@
 #import <MJRefresh/MJRefresh.h>
 #import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
 #import <SDWebImage/UIImageView+WebCache.h>
-#import <libextobjc/EXTScope.h>
-#import "NSObject+Decorate.h"
-#import "NTY_Macros.h"
-#import "Logger.h"
+
 #import "MoviePosterCell.h"
 #import "DataProvider.h"
 
@@ -21,11 +18,10 @@
 @property (nonatomic, weak) IBOutlet UITableView        *tableView;
 @property (nonatomic, strong) NSMutableArray<NSString*> *movies;
 @property (nonatomic, assign) NSUInteger                 pageIndex;
+@property (nonatomic, assign) BOOL                       prefetching;
 @end
 
 @implementation ViewController
-
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -66,7 +62,9 @@
 
     self.tableView.mj_footer = [[MJRefreshBackNormalFooter footerWithRefreshingBlock:^{
         @strongify(self);
-        [self loadMoreData:NO];
+        if (!self.prefetching) {
+            [self loadMoreData:NO];
+        }
     }] sas_decorate:^(__kindof MJRefreshBackNormalFooter*_Nonnull footer) {
         footer.activityIndicatorViewStyle = UIActivityIndicatorViewStyleGray;
         footer.stateLabel.textColor = COLOR_HEXA(0x000000, 0.5);
@@ -81,6 +79,7 @@
 }
 #pragma mark -
 - (void)loadNewData {
+    [self cancelPrefetch];
     self.pageIndex = 0;
     @weakify(self);
     [[DataProvider shared] loadData:self.pageIndex completion:^(NSArray<NSString*> *urls) {
@@ -93,6 +92,14 @@
 }
 
 - (void)loadMoreData:(BOOL)prefetch {
+    if (![[DataProvider shared] hasMoreData:self.pageIndex]) {
+        return;
+    }
+
+    if (prefetch) {
+        self.tableView.mj_footer.state = MJRefreshStateRefreshing;
+    }
+
     @weakify(self);
     [[DataProvider shared] loadData:self.pageIndex + 1 completion:^(NSArray<NSString*> *urls) {
         @strongify(self);
@@ -109,9 +116,14 @@
         [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:(UITableViewRowAnimationAutomatic)];
         [self.tableView endUpdates];
 
-        [self.tableView.mj_footer endRefreshing];
+        self.prefetching = NO;
+        //[self.tableView.mj_footer endRefreshing];
         self.tableView.mj_footer.state = [[DataProvider shared] hasMoreData:self.pageIndex]? MJRefreshStateIdle:MJRefreshStateNoMoreData;
     }];
+}
+- (void)cancelPrefetch {
+    self.prefetching = NO;
+    NSLogInfo(@"cancel prefetch");
 }
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
@@ -136,6 +148,25 @@
     }];
     return cell;
 }
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView*)scrollView {
+    if (self.prefetching) {
+        return;
+    }
+
+    CGFloat contentOffset   = RECT_BOTTOM(scrollView.bounds);
+    CGFloat contentHeight   = scrollView.contentSize.height;
+    CGFloat pageHeight      = RECT_HEGIHT(scrollView.frame);
+    CGFloat contentDistance = contentHeight - contentOffset;
+    CGFloat contentVisited  = contentOffset / contentHeight;
+    if (contentDistance < pageHeight * 0.3 && contentDistance > 10 /*contentVisited >= 0.8 && contentVisited < 0.95*/) {
+        NSLogInfo(@"%@", @[@(contentOffset), @(contentHeight), @(contentVisited), @(contentHeight * (1 - contentVisited))]);
+        self.prefetching = YES;
+        NSLog(@"start prefetch");
+        [self loadMoreData:YES];
+    }
+}
+
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView*)tableView willDisplayCell:(UITableViewCell*)cell forRowAtIndexPath:(NSIndexPath*)indexPath {
     cell.backgroundColor = indexPath.row % 2? [UIColor whiteColor]:[UIColor grayColor];
