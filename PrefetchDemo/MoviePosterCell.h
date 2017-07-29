@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "NTYTableViewCell.h"
 
-@interface MoviePosterCell : UITableViewCell
+@protocol MoviePosterCellViewModel <NTYTableViewCellViewModel>
+@property (nonatomic, readonly) NSString *poster;
+@end
+typedef id<MoviePosterCellViewModel>          MoviePosterCellViewModelType;
+typedef NSArray<MoviePosterCellViewModelType> MoviePosterCellViewModelArray;
+
+@interface MoviePosterCell : NTYTableViewCell<NTYSupportViewModel>
 @property (nonatomic, weak) IBOutlet UIImageView *posterView;
 @end

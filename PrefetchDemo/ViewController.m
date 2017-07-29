@@ -9,16 +9,21 @@
 #import "ViewController.h"
 #import <MJRefresh/MJRefresh.h>
 #import <UITableView+FDTemplateLayoutCell/UITableView+FDTemplateLayoutCell.h>
-#import <SDWebImage/UIImageView+WebCache.h>
 
 #import "MoviePosterCell.h"
 #import "DataProvider.h"
+#import "NTYTableViewProxy.h"
 
-@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
-@property (nonatomic, weak) IBOutlet UITableView        *tableView;
-@property (nonatomic, strong) NSMutableArray<NSString*> *movies;
-@property (nonatomic, assign) NSUInteger                 pageIndex;
-@property (nonatomic, assign) BOOL                       prefetching;
+
+@interface ViewController ()
+#if USE_NATIVE
+<UITableViewDataSource, UITableViewDelegate>
+#endif // if USE_NATIVE
+@property (nonatomic, weak) IBOutlet UITableView                           *tableView;
+@property (nonatomic, strong) NSMutableArray<MoviePosterCellViewModelType> *movies;
+@property (nonatomic, assign) NSUInteger                                    pageIndex;
+@property (nonatomic, assign) BOOL                                          prefetching;
+@property (nonatomic, strong) NTYTableViewProxy                            *proxy;
 @end
 
 @implementation ViewController
@@ -34,8 +39,10 @@
 }
 
 - (void)buildUI {
+   #if USE_NATIVE
     self.tableView.dataSource = self;
     self.tableView.delegate   = self;
+   #endif // if USE_NATIVE
     // Set header
     @weakify(self);
     self.tableView.mj_header = [[MJRefreshGifHeader headerWithRefreshingBlock:^{
@@ -76,16 +83,30 @@
         [footer setTitle:@"正在加载 ..." forState:MJRefreshStateRefreshing];
         [footer setTitle:@"没有更多了" forState:MJRefreshStateNoMoreData];
     }];
+
+    self.proxy                 = [NTYTableViewProxy proxy:self.tableView];
+    self.proxy.willDisplayCell = ^(__kindof NTYTableViewProxy*_Nonnull proxy, UITableView*_Nonnull tableView, UITableViewCell*_Nonnull cell, NSIndexPath*_Nonnull indexPath) {
+        @strongify(self);
+        [self tableView:tableView willDisplayCell:cell forRowAtIndexPath:indexPath];
+    };
+    self.proxy.didScroll = ^(NTYScrollViewProxy*_Nonnull proxy, UIScrollView*_Nonnull scrollView) {
+        @strongify(self);
+        [self scrollViewDidScroll:scrollView];
+    };
 }
 #pragma mark -
 - (void)loadNewData {
     [self cancelPrefetch];
     self.pageIndex = 0;
     @weakify(self);
-    [[DataProvider shared] loadData:self.pageIndex completion:^(NSArray<NSString*> *urls) {
+    [[DataProvider shared] loadData:self.pageIndex completion:^(MoviePosterCellViewModelArray *urls) {
         @strongify(self);
+   #if USE_NATIVE
         self.movies = urls.mutableCopy;
         [self.tableView reloadData];
+   #else // if 0
+        [self.proxy updateViewModels:urls];
+   #endif // if 0
         [self.tableView.mj_header endRefreshing];
         self.tableView.mj_footer.state = [[DataProvider shared] hasMoreData:self.pageIndex]? MJRefreshStateIdle:MJRefreshStateNoMoreData;
     }];
@@ -101,10 +122,10 @@
     }
 
     @weakify(self);
-    [[DataProvider shared] loadData:self.pageIndex + 1 completion:^(NSArray<NSString*> *urls) {
+    [[DataProvider shared] loadData:self.pageIndex + 1 completion:^(MoviePosterCellViewModelArray *urls) {
         @strongify(self);
         self.pageIndex += 1;
-
+   #if USE_NATIVE
         [self.tableView beginUpdates];
         NSMutableArray*indexPaths = [NSMutableArray arrayWithCapacity:urls.count];
         NSUInteger row = self.movies.count;
@@ -115,7 +136,9 @@
         }
         [self.tableView insertRowsAtIndexPaths:indexPaths withRowAnimation:(UITableViewRowAnimationAutomatic)];
         [self.tableView endUpdates];
-
+   #else // if 0
+        [self.proxy appendViewModels:urls];
+   #endif // if 0
         self.prefetching = NO;
         //[self.tableView.mj_footer endRefreshing];
         self.tableView.mj_footer.state = [[DataProvider shared] hasMoreData:self.pageIndex]? MJRefreshStateIdle:MJRefreshStateNoMoreData;
@@ -126,6 +149,7 @@
     NSLogInfo(@"cancel prefetch");
 }
 #pragma mark - UITableViewDataSource
+#if USE_NATIVE
 - (NSInteger)tableView:(UITableView*)tableView numberOfRowsInSection:(NSInteger)section {
     return self.movies.count;
 }
@@ -136,18 +160,11 @@
 }
 
 - (UITableViewCell*)tableView:(UITableView*)tableView cellForRowAtIndexPath:(NSIndexPath*)indexPath {
-    MoviePosterCell *cell        = [tableView dequeueReusableCellWithIdentifier:@"MoviePosterCell"];
-    UIImageView     *posterView  = cell.posterView;
-    NSString        *urlString   = self.movies[indexPath.row];
-    UIImage         *placeholder = [UIImage imageNamed:@"default_focus"];
-
-    [posterView sd_setImageWithURL:[NSURL URLWithString:urlString] placeholderImage:placeholder completed:^(UIImage*_Nullable image, NSError*_Nullable error, SDImageCacheType cacheType, NSURL*_Nullable imageURL) {
-        if (error) {
-            NSLogError(@"%@", error);
-        }
-    }];
+    MoviePosterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MoviePosterCell"];
+    [cell setViewModel:self.movies[indexPath.row]];
     return cell;
 }
+#endif // if USE_NATIVE
 #pragma mark - UIScrollViewDelegate
 - (void)scrollViewDidScroll:(UIScrollView*)scrollView {
     if (self.prefetching) {

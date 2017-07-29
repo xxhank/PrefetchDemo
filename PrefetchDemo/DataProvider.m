@@ -8,6 +8,14 @@
 
 #import "DataProvider.h"
 
+@interface NSString (MoviePosterCellViewModel)<MoviePosterCellViewModel>
+
+@end
+@implementation NSString (MoviePosterCellViewModel)
+- (NSString*)poster {return self;}
+- (NSString*)reuseIdentifier {return @"MoviePosterCell";}
+@end
+
 @interface DataProvider ()
 @property (nonatomic, strong) NSArray<NSString*> *urls;
 @end
@@ -138,7 +146,7 @@
 }
 
 const NSUInteger PageSize = 20;
-- (void)loadData:(NSUInteger)pageIndex completion:(void (^)(NSArray<NSString*>*urls))completion {
+- (void)loadData:(NSUInteger)pageIndex completion:(void (^)(MoviePosterCellViewModelArray*urls))completion {
     NSTimeInterval delayInSeconds = arc4random_uniform(20) + 1;
     delayInSeconds /= 10.0;
 

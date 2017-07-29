@@ -7,10 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MoviePosterCell.h"
 
 @interface DataProvider : NSObject
 @property (nonatomic, readonly) NSArray<NSString*> *urls;
 + (instancetype)shared;
-- (void)loadData:(NSUInteger)pageIndex completion:(void (^)(NSArray<NSString*>*urls))completion;
+- (void)loadData:(NSUInteger)pageIndex completion:(void (^)(MoviePosterCellViewModelArray*urls))completion;
 - (BOOL)hasMoreData:(NSUInteger)pageIndex;
 @end
