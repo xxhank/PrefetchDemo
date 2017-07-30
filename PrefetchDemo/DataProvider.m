@@ -146,7 +146,7 @@
     return instance;
 }
 
-const NSUInteger PageSize = 20;
+const NSUInteger PageSize = 5;
 - (void)loadData:(NSUInteger)pageIndex completion:(void (^)(MoviePosterCellViewModelArray*urls))completion {
     NSTimeInterval   delayInSeconds = arc4random_uniform(20) + 1;
     delayInSeconds /= 10.0;

@@ -39,15 +39,29 @@
                                                         <constraint firstAttribute="width" secondItem="7xn-GB-sON" secondAttribute="height" multiplier="16:9" id="wlM-WT-28Q"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4pk-Pt-R7r">
+                                                    <rect key="frame" x="0.0" y="0.0" width="32" height="20"/>
+                                                    <color key="backgroundColor" red="0.75686274509999996" green="0.75686274509999996" blue="0.75686274509999996" alpha="0.80000000000000004" colorSpace="calibratedRGB"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="32" id="DRF-xN-Klm"/>
+                                                        <constraint firstAttribute="height" constant="20" id="Hjg-nF-Tu7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="7xn-GB-sON" secondAttribute="bottom" id="5dN-CO-fcL"/>
+                                                <constraint firstItem="4pk-Pt-R7r" firstAttribute="leading" secondItem="bEX-fm-WcL" secondAttribute="leading" id="80k-ZK-dv1"/>
                                                 <constraint firstAttribute="trailing" secondItem="7xn-GB-sON" secondAttribute="trailing" id="ZkS-vY-Y4i"/>
                                                 <constraint firstItem="7xn-GB-sON" firstAttribute="top" secondItem="bEX-fm-WcL" secondAttribute="top" id="bE6-eL-hU0"/>
                                                 <constraint firstItem="7xn-GB-sON" firstAttribute="leading" secondItem="bEX-fm-WcL" secondAttribute="leading" id="g1S-7f-Np9"/>
+                                                <constraint firstItem="4pk-Pt-R7r" firstAttribute="top" secondItem="bEX-fm-WcL" secondAttribute="top" id="yPO-zY-qCt"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="orderLabel" destination="4pk-Pt-R7r" id="3lc-r6-VRS"/>
                                             <outlet property="posterView" destination="7xn-GB-sON" id="yX4-D3-mrw"/>
                                         </connections>
                                     </tableViewCell>
@@ -69,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+            <point key="canvasLocation" x="1076" y="137"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TrD-QW-TIh">
