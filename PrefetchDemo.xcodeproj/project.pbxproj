@@ -19,23 +19,23 @@
 		6121CD0B1F2C2CA1009F04B2 /* PrefetchDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD0A1F2C2CA1009F04B2 /* PrefetchDemoTests.m */; };
 		6121CD161F2C2CA1009F04B2 /* PrefetchDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD151F2C2CA1009F04B2 /* PrefetchDemoUITests.m */; };
 		6121CD251F2C2FA5009F04B2 /* DataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD241F2C2FA5009F04B2 /* DataProvider.m */; };
-		6121CD281F2C30C0009F04B2 /* NSObject+Decroate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD271F2C30C0009F04B2 /* NSObject+Decroate.m */; };
-		6121CD2C1F2C313C009F04B2 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD2B1F2C313C009F04B2 /* Logger.m */; };
 		6121CD2F1F2C33A7009F04B2 /* MoviePosterCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD2E1F2C33A7009F04B2 /* MoviePosterCell.m */; };
-		6121CD3E1F2C42B8009F04B2 /* NTYScrollViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD321F2C42B8009F04B2 /* NTYScrollViewProxy.m */; };
-		6121CD3F1F2C42B8009F04B2 /* NTYTableViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD341F2C42B8009F04B2 /* NTYTableViewProxy.m */; };
-		6121CD401F2C42B8009F04B2 /* NTYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD371F2C42B8009F04B2 /* NTYTableViewCell.m */; };
-		6121CD411F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD391F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m */; };
-		6121CD421F2C42B8009F04B2 /* NTYCollectionViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD3B1F2C42B8009F04B2 /* NTYCollectionViewProxy.m */; };
-		6121CD431F2C42B8009F04B2 /* NTYSupportViewModelImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD3D1F2C42B8009F04B2 /* NTYSupportViewModelImpl.m */; };
-		6121CD471F2C4331009F04B2 /* NSArray+NTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD461F2C4331009F04B2 /* NSArray+NTYExtension.m */; };
-		6121CD4A1F2C433E009F04B2 /* UITableViewCell+NTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD491F2C433E009F04B2 /* UITableViewCell+NTYExtension.m */; };
-		6121CD4E1F2C4F4C009F04B2 /* Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD4D1F2C4F4C009F04B2 /* Dispatch.m */; };
-		6121CD511F2C4F93009F04B2 /* NSObject+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = 6121CD501F2C4F93009F04B2 /* NSObject+Cast.m */; };
-		7FD4636C1F2D5D6F00696542 /* SASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463691F2D5D6F00696542 /* SASViewController.m */; };
-		7FD4636D1F2D5D6F00696542 /* SASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4636B1F2D5D6F00696542 /* SASTableViewController.m */; };
-		7FD463701F2D5DB100696542 /* UIButton+NTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4636F1F2D5DB100696542 /* UIButton+NTYExtension.m */; };
-		7FD463731F2D5DFD00696542 /* NTYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463721F2D5DFD00696542 /* NTYTableView.m */; };
+		7FD4639F1F2D86A000696542 /* SASTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463771F2D86A000696542 /* SASTableViewController.m */; };
+		7FD463A01F2D86A000696542 /* SASViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463791F2D86A000696542 /* SASViewController.m */; };
+		7FD463A11F2D86A000696542 /* Dispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4637D1F2D86A000696542 /* Dispatch.m */; };
+		7FD463A21F2D86A000696542 /* NSArray+NTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463801F2D86A000696542 /* NSArray+NTYExtension.m */; };
+		7FD463A31F2D86A000696542 /* NSObject+Cast.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463821F2D86A000696542 /* NSObject+Cast.m */; };
+		7FD463A41F2D86A000696542 /* NSObject+Decroate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463841F2D86A000696542 /* NSObject+Decroate.m */; };
+		7FD463A51F2D86A000696542 /* UIButton+NTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463861F2D86A000696542 /* UIButton+NTYExtension.m */; };
+		7FD463A61F2D86A000696542 /* UITableViewCell+NTYExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463881F2D86A000696542 /* UITableViewCell+NTYExtension.m */; };
+		7FD463A71F2D86A000696542 /* Logger.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4638B1F2D86A000696542 /* Logger.m */; };
+		7FD463A81F2D86A000696542 /* NTYCollectionViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463901F2D86A000696542 /* NTYCollectionViewProxy.m */; };
+		7FD463A91F2D86A000696542 /* NTYScrollViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463921F2D86A000696542 /* NTYScrollViewProxy.m */; };
+		7FD463AA1F2D86A000696542 /* NTYSupportViewModelImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463951F2D86A000696542 /* NTYSupportViewModelImpl.m */; };
+		7FD463AB1F2D86A000696542 /* NTYTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463971F2D86A000696542 /* NTYTableViewCell.m */; };
+		7FD463AC1F2D86A000696542 /* NTYTableViewHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD463991F2D86A000696542 /* NTYTableViewHeaderFooterView.m */; };
+		7FD463AD1F2D86A000696542 /* NTYTableViewProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4639B1F2D86A000696542 /* NTYTableViewProxy.m */; };
+		7FD463AE1F2D86A000696542 /* NTYTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD4639E1F2D86A000696542 /* NTYTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,43 +78,43 @@
 		6121CD171F2C2CA1009F04B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6121CD231F2C2FA5009F04B2 /* DataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataProvider.h; sourceTree = "<group>"; };
 		6121CD241F2C2FA5009F04B2 /* DataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataProvider.m; sourceTree = "<group>"; };
-		6121CD261F2C30C0009F04B2 /* NSObject+Decorate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Decorate.h"; sourceTree = "<group>"; };
-		6121CD271F2C30C0009F04B2 /* NSObject+Decroate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Decroate.m"; sourceTree = "<group>"; };
-		6121CD291F2C30E4009F04B2 /* NTY_Macros.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NTY_Macros.h; sourceTree = "<group>"; };
-		6121CD2A1F2C313C009F04B2 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
-		6121CD2B1F2C313C009F04B2 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
 		6121CD2D1F2C33A7009F04B2 /* MoviePosterCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviePosterCell.h; sourceTree = "<group>"; };
 		6121CD2E1F2C33A7009F04B2 /* MoviePosterCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviePosterCell.m; sourceTree = "<group>"; };
-		6121CD311F2C42B8009F04B2 /* NTYScrollViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYScrollViewProxy.h; sourceTree = "<group>"; };
-		6121CD321F2C42B8009F04B2 /* NTYScrollViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYScrollViewProxy.m; sourceTree = "<group>"; };
-		6121CD331F2C42B8009F04B2 /* NTYTableViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewProxy.h; sourceTree = "<group>"; };
-		6121CD341F2C42B8009F04B2 /* NTYTableViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewProxy.m; sourceTree = "<group>"; };
-		6121CD351F2C42B8009F04B2 /* NTYSupportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYSupportViewModel.h; sourceTree = "<group>"; };
-		6121CD361F2C42B8009F04B2 /* NTYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewCell.h; sourceTree = "<group>"; };
-		6121CD371F2C42B8009F04B2 /* NTYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewCell.m; sourceTree = "<group>"; };
-		6121CD381F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewHeaderFooterView.h; sourceTree = "<group>"; };
-		6121CD391F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewHeaderFooterView.m; sourceTree = "<group>"; };
-		6121CD3A1F2C42B8009F04B2 /* NTYCollectionViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYCollectionViewProxy.h; sourceTree = "<group>"; };
-		6121CD3B1F2C42B8009F04B2 /* NTYCollectionViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYCollectionViewProxy.m; sourceTree = "<group>"; };
-		6121CD3C1F2C42B8009F04B2 /* NTYSupportViewModelImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYSupportViewModelImpl.h; sourceTree = "<group>"; };
-		6121CD3D1F2C42B8009F04B2 /* NTYSupportViewModelImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYSupportViewModelImpl.m; sourceTree = "<group>"; };
-		6121CD451F2C4331009F04B2 /* NSArray+NTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NTYExtension.h"; sourceTree = "<group>"; };
-		6121CD461F2C4331009F04B2 /* NSArray+NTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NTYExtension.m"; sourceTree = "<group>"; };
-		6121CD481F2C433E009F04B2 /* UITableViewCell+NTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+NTYExtension.h"; sourceTree = "<group>"; };
-		6121CD491F2C433E009F04B2 /* UITableViewCell+NTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+NTYExtension.m"; sourceTree = "<group>"; };
 		6121CD4B1F2C4E4B009F04B2 /* prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = prefix.pch; sourceTree = "<group>"; };
-		6121CD4C1F2C4F4C009F04B2 /* Dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dispatch.h; sourceTree = "<group>"; };
-		6121CD4D1F2C4F4C009F04B2 /* Dispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dispatch.m; sourceTree = "<group>"; };
-		6121CD4F1F2C4F93009F04B2 /* NSObject+Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Cast.h"; sourceTree = "<group>"; };
-		6121CD501F2C4F93009F04B2 /* NSObject+Cast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Cast.m"; sourceTree = "<group>"; };
-		7FD463681F2D5D6F00696542 /* SASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASViewController.h; sourceTree = "<group>"; };
-		7FD463691F2D5D6F00696542 /* SASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASViewController.m; sourceTree = "<group>"; };
-		7FD4636A1F2D5D6F00696542 /* SASTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASTableViewController.h; sourceTree = "<group>"; };
-		7FD4636B1F2D5D6F00696542 /* SASTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASTableViewController.m; sourceTree = "<group>"; };
-		7FD4636E1F2D5DB100696542 /* UIButton+NTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NTYExtension.h"; sourceTree = "<group>"; };
-		7FD4636F1F2D5DB100696542 /* UIButton+NTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NTYExtension.m"; sourceTree = "<group>"; };
-		7FD463711F2D5DFD00696542 /* NTYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableView.h; sourceTree = "<group>"; };
-		7FD463721F2D5DFD00696542 /* NTYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableView.m; sourceTree = "<group>"; };
+		7FD463761F2D86A000696542 /* SASTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASTableViewController.h; sourceTree = "<group>"; };
+		7FD463771F2D86A000696542 /* SASTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASTableViewController.m; sourceTree = "<group>"; };
+		7FD463781F2D86A000696542 /* SASViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SASViewController.h; sourceTree = "<group>"; };
+		7FD463791F2D86A000696542 /* SASViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SASViewController.m; sourceTree = "<group>"; };
+		7FD4637C1F2D86A000696542 /* Dispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dispatch.h; sourceTree = "<group>"; };
+		7FD4637D1F2D86A000696542 /* Dispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dispatch.m; sourceTree = "<group>"; };
+		7FD4637F1F2D86A000696542 /* NSArray+NTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+NTYExtension.h"; sourceTree = "<group>"; };
+		7FD463801F2D86A000696542 /* NSArray+NTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+NTYExtension.m"; sourceTree = "<group>"; };
+		7FD463811F2D86A000696542 /* NSObject+Cast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Cast.h"; sourceTree = "<group>"; };
+		7FD463821F2D86A000696542 /* NSObject+Cast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Cast.m"; sourceTree = "<group>"; };
+		7FD463831F2D86A000696542 /* NSObject+Decorate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Decorate.h"; sourceTree = "<group>"; };
+		7FD463841F2D86A000696542 /* NSObject+Decroate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Decroate.m"; sourceTree = "<group>"; };
+		7FD463851F2D86A000696542 /* UIButton+NTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+NTYExtension.h"; sourceTree = "<group>"; };
+		7FD463861F2D86A000696542 /* UIButton+NTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+NTYExtension.m"; sourceTree = "<group>"; };
+		7FD463871F2D86A000696542 /* UITableViewCell+NTYExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+NTYExtension.h"; sourceTree = "<group>"; };
+		7FD463881F2D86A000696542 /* UITableViewCell+NTYExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+NTYExtension.m"; sourceTree = "<group>"; };
+		7FD4638A1F2D86A000696542 /* Logger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Logger.h; sourceTree = "<group>"; };
+		7FD4638B1F2D86A000696542 /* Logger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Logger.m; sourceTree = "<group>"; };
+		7FD4638D1F2D86A000696542 /* NTY_Macros.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTY_Macros.h; sourceTree = "<group>"; };
+		7FD4638F1F2D86A000696542 /* NTYCollectionViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYCollectionViewProxy.h; sourceTree = "<group>"; };
+		7FD463901F2D86A000696542 /* NTYCollectionViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYCollectionViewProxy.m; sourceTree = "<group>"; };
+		7FD463911F2D86A000696542 /* NTYScrollViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYScrollViewProxy.h; sourceTree = "<group>"; };
+		7FD463921F2D86A000696542 /* NTYScrollViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYScrollViewProxy.m; sourceTree = "<group>"; };
+		7FD463931F2D86A000696542 /* NTYSupportViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYSupportViewModel.h; sourceTree = "<group>"; };
+		7FD463941F2D86A000696542 /* NTYSupportViewModelImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYSupportViewModelImpl.h; sourceTree = "<group>"; };
+		7FD463951F2D86A000696542 /* NTYSupportViewModelImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYSupportViewModelImpl.m; sourceTree = "<group>"; };
+		7FD463961F2D86A000696542 /* NTYTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewCell.h; sourceTree = "<group>"; };
+		7FD463971F2D86A000696542 /* NTYTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewCell.m; sourceTree = "<group>"; };
+		7FD463981F2D86A000696542 /* NTYTableViewHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewHeaderFooterView.h; sourceTree = "<group>"; };
+		7FD463991F2D86A000696542 /* NTYTableViewHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewHeaderFooterView.m; sourceTree = "<group>"; };
+		7FD4639A1F2D86A000696542 /* NTYTableViewProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableViewProxy.h; sourceTree = "<group>"; };
+		7FD4639B1F2D86A000696542 /* NTYTableViewProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableViewProxy.m; sourceTree = "<group>"; };
+		7FD4639D1F2D86A000696542 /* NTYTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NTYTableView.h; sourceTree = "<group>"; };
+		7FD4639E1F2D86A000696542 /* NTYTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NTYTableView.m; sourceTree = "<group>"; };
 		8A100307FA85A27432976C34 /* Pods-PrefetchDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrefetchDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PrefetchDemoTests/Pods-PrefetchDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9B652533ED463C77BE4122D7 /* libPods-PrefetchDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PrefetchDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE3DCA289DFC498CDE62912A /* Pods-PrefetchDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PrefetchDemoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PrefetchDemoUITests/Pods-PrefetchDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -175,7 +175,8 @@
 		6121CCEF1F2C2CA1009F04B2 /* PrefetchDemo */ = {
 			isa = PBXGroup;
 			children = (
-				6121CD301F2C42A5009F04B2 /* Engine */,
+				7FD463741F2D86A000696542 /* Component */,
+				7FD4637A1F2D86A000696542 /* Ninty */,
 				6121CCF31F2C2CA1009F04B2 /* AppDelegate.h */,
 				6121CCF41F2C2CA1009F04B2 /* AppDelegate.m */,
 				6121CCF61F2C2CA1009F04B2 /* ViewController.h */,
@@ -220,55 +221,6 @@
 			path = PrefetchDemoUITests;
 			sourceTree = "<group>";
 		};
-		6121CD301F2C42A5009F04B2 /* Engine */ = {
-			isa = PBXGroup;
-			children = (
-				7FD463711F2D5DFD00696542 /* NTYTableView.h */,
-				7FD463721F2D5DFD00696542 /* NTYTableView.m */,
-				7FD4636E1F2D5DB100696542 /* UIButton+NTYExtension.h */,
-				7FD4636F1F2D5DB100696542 /* UIButton+NTYExtension.m */,
-				7FD463681F2D5D6F00696542 /* SASViewController.h */,
-				7FD463691F2D5D6F00696542 /* SASViewController.m */,
-				7FD4636A1F2D5D6F00696542 /* SASTableViewController.h */,
-				7FD4636B1F2D5D6F00696542 /* SASTableViewController.m */,
-				6121CD441F2C42BE009F04B2 /* Proxy */,
-				6121CD2A1F2C313C009F04B2 /* Logger.h */,
-				6121CD2B1F2C313C009F04B2 /* Logger.m */,
-				6121CD291F2C30E4009F04B2 /* NTY_Macros.h */,
-				6121CD261F2C30C0009F04B2 /* NSObject+Decorate.h */,
-				6121CD271F2C30C0009F04B2 /* NSObject+Decroate.m */,
-			);
-			name = Engine;
-			sourceTree = "<group>";
-		};
-		6121CD441F2C42BE009F04B2 /* Proxy */ = {
-			isa = PBXGroup;
-			children = (
-				6121CD4F1F2C4F93009F04B2 /* NSObject+Cast.h */,
-				6121CD501F2C4F93009F04B2 /* NSObject+Cast.m */,
-				6121CD4C1F2C4F4C009F04B2 /* Dispatch.h */,
-				6121CD4D1F2C4F4C009F04B2 /* Dispatch.m */,
-				6121CD481F2C433E009F04B2 /* UITableViewCell+NTYExtension.h */,
-				6121CD491F2C433E009F04B2 /* UITableViewCell+NTYExtension.m */,
-				6121CD451F2C4331009F04B2 /* NSArray+NTYExtension.h */,
-				6121CD461F2C4331009F04B2 /* NSArray+NTYExtension.m */,
-				6121CD311F2C42B8009F04B2 /* NTYScrollViewProxy.h */,
-				6121CD321F2C42B8009F04B2 /* NTYScrollViewProxy.m */,
-				6121CD331F2C42B8009F04B2 /* NTYTableViewProxy.h */,
-				6121CD341F2C42B8009F04B2 /* NTYTableViewProxy.m */,
-				6121CD351F2C42B8009F04B2 /* NTYSupportViewModel.h */,
-				6121CD361F2C42B8009F04B2 /* NTYTableViewCell.h */,
-				6121CD371F2C42B8009F04B2 /* NTYTableViewCell.m */,
-				6121CD381F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.h */,
-				6121CD391F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m */,
-				6121CD3A1F2C42B8009F04B2 /* NTYCollectionViewProxy.h */,
-				6121CD3B1F2C42B8009F04B2 /* NTYCollectionViewProxy.m */,
-				6121CD3C1F2C42B8009F04B2 /* NTYSupportViewModelImpl.h */,
-				6121CD3D1F2C42B8009F04B2 /* NTYSupportViewModelImpl.m */,
-			);
-			name = Proxy;
-			sourceTree = "<group>";
-		};
 		6F27F3B5150B9E71F5C59799 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -290,6 +242,110 @@
 				07D4EB0B226DF4526C1C539D /* Pods-PrefetchDemoUITests.release.xcconfig */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		7FD463741F2D86A000696542 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				7FD463751F2D86A000696542 /* BaseViewController */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
+		7FD463751F2D86A000696542 /* BaseViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7FD463761F2D86A000696542 /* SASTableViewController.h */,
+				7FD463771F2D86A000696542 /* SASTableViewController.m */,
+				7FD463781F2D86A000696542 /* SASViewController.h */,
+				7FD463791F2D86A000696542 /* SASViewController.m */,
+			);
+			path = BaseViewController;
+			sourceTree = "<group>";
+		};
+		7FD4637A1F2D86A000696542 /* Ninty */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4637B1F2D86A000696542 /* Dispatch */,
+				7FD4637E1F2D86A000696542 /* Extension */,
+				7FD463891F2D86A000696542 /* Logger */,
+				7FD4638C1F2D86A000696542 /* Macros */,
+				7FD4638E1F2D86A000696542 /* NTYTableViewProxy */,
+				7FD4639C1F2D86A000696542 /* TableView */,
+			);
+			path = Ninty;
+			sourceTree = "<group>";
+		};
+		7FD4637B1F2D86A000696542 /* Dispatch */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4637C1F2D86A000696542 /* Dispatch.h */,
+				7FD4637D1F2D86A000696542 /* Dispatch.m */,
+			);
+			path = Dispatch;
+			sourceTree = "<group>";
+		};
+		7FD4637E1F2D86A000696542 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4637F1F2D86A000696542 /* NSArray+NTYExtension.h */,
+				7FD463801F2D86A000696542 /* NSArray+NTYExtension.m */,
+				7FD463811F2D86A000696542 /* NSObject+Cast.h */,
+				7FD463821F2D86A000696542 /* NSObject+Cast.m */,
+				7FD463831F2D86A000696542 /* NSObject+Decorate.h */,
+				7FD463841F2D86A000696542 /* NSObject+Decroate.m */,
+				7FD463851F2D86A000696542 /* UIButton+NTYExtension.h */,
+				7FD463861F2D86A000696542 /* UIButton+NTYExtension.m */,
+				7FD463871F2D86A000696542 /* UITableViewCell+NTYExtension.h */,
+				7FD463881F2D86A000696542 /* UITableViewCell+NTYExtension.m */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		7FD463891F2D86A000696542 /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4638A1F2D86A000696542 /* Logger.h */,
+				7FD4638B1F2D86A000696542 /* Logger.m */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		7FD4638C1F2D86A000696542 /* Macros */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4638D1F2D86A000696542 /* NTY_Macros.h */,
+			);
+			path = Macros;
+			sourceTree = "<group>";
+		};
+		7FD4638E1F2D86A000696542 /* NTYTableViewProxy */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4638F1F2D86A000696542 /* NTYCollectionViewProxy.h */,
+				7FD463901F2D86A000696542 /* NTYCollectionViewProxy.m */,
+				7FD463911F2D86A000696542 /* NTYScrollViewProxy.h */,
+				7FD463921F2D86A000696542 /* NTYScrollViewProxy.m */,
+				7FD463931F2D86A000696542 /* NTYSupportViewModel.h */,
+				7FD463941F2D86A000696542 /* NTYSupportViewModelImpl.h */,
+				7FD463951F2D86A000696542 /* NTYSupportViewModelImpl.m */,
+				7FD463961F2D86A000696542 /* NTYTableViewCell.h */,
+				7FD463971F2D86A000696542 /* NTYTableViewCell.m */,
+				7FD463981F2D86A000696542 /* NTYTableViewHeaderFooterView.h */,
+				7FD463991F2D86A000696542 /* NTYTableViewHeaderFooterView.m */,
+				7FD4639A1F2D86A000696542 /* NTYTableViewProxy.h */,
+				7FD4639B1F2D86A000696542 /* NTYTableViewProxy.m */,
+			);
+			path = NTYTableViewProxy;
+			sourceTree = "<group>";
+		};
+		7FD4639C1F2D86A000696542 /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				7FD4639D1F2D86A000696542 /* NTYTableView.h */,
+				7FD4639E1F2D86A000696542 /* NTYTableView.m */,
+			);
+			path = TableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -576,26 +632,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				6121CD2F1F2C33A7009F04B2 /* MoviePosterCell.m in Sources */,
-				6121CD281F2C30C0009F04B2 /* NSObject+Decroate.m in Sources */,
-				6121CD431F2C42B8009F04B2 /* NTYSupportViewModelImpl.m in Sources */,
-				6121CD2C1F2C313C009F04B2 /* Logger.m in Sources */,
-				6121CD411F2C42B8009F04B2 /* NTYTableViewHeaderFooterView.m in Sources */,
-				6121CD4E1F2C4F4C009F04B2 /* Dispatch.m in Sources */,
-				6121CD401F2C42B8009F04B2 /* NTYTableViewCell.m in Sources */,
-				7FD463701F2D5DB100696542 /* UIButton+NTYExtension.m in Sources */,
-				6121CD4A1F2C433E009F04B2 /* UITableViewCell+NTYExtension.m in Sources */,
-				7FD4636C1F2D5D6F00696542 /* SASViewController.m in Sources */,
+				7FD463A81F2D86A000696542 /* NTYCollectionViewProxy.m in Sources */,
+				7FD463A21F2D86A000696542 /* NSArray+NTYExtension.m in Sources */,
+				7FD4639F1F2D86A000696542 /* SASTableViewController.m in Sources */,
 				6121CCF81F2C2CA1009F04B2 /* ViewController.m in Sources */,
-				7FD463731F2D5DFD00696542 /* NTYTableView.m in Sources */,
-				7FD4636D1F2D5D6F00696542 /* SASTableViewController.m in Sources */,
-				6121CD511F2C4F93009F04B2 /* NSObject+Cast.m in Sources */,
-				6121CD3F1F2C42B8009F04B2 /* NTYTableViewProxy.m in Sources */,
-				6121CD421F2C42B8009F04B2 /* NTYCollectionViewProxy.m in Sources */,
 				6121CCF51F2C2CA1009F04B2 /* AppDelegate.m in Sources */,
-				6121CD471F2C4331009F04B2 /* NSArray+NTYExtension.m in Sources */,
+				7FD463AD1F2D86A000696542 /* NTYTableViewProxy.m in Sources */,
+				7FD463A91F2D86A000696542 /* NTYScrollViewProxy.m in Sources */,
+				7FD463AC1F2D86A000696542 /* NTYTableViewHeaderFooterView.m in Sources */,
+				7FD463A71F2D86A000696542 /* Logger.m in Sources */,
+				7FD463AA1F2D86A000696542 /* NTYSupportViewModelImpl.m in Sources */,
+				7FD463AE1F2D86A000696542 /* NTYTableView.m in Sources */,
+				7FD463AB1F2D86A000696542 /* NTYTableViewCell.m in Sources */,
 				6121CD251F2C2FA5009F04B2 /* DataProvider.m in Sources */,
-				6121CD3E1F2C42B8009F04B2 /* NTYScrollViewProxy.m in Sources */,
+				7FD463A11F2D86A000696542 /* Dispatch.m in Sources */,
+				7FD463A41F2D86A000696542 /* NSObject+Decroate.m in Sources */,
+				7FD463A01F2D86A000696542 /* SASViewController.m in Sources */,
+				7FD463A31F2D86A000696542 /* NSObject+Cast.m in Sources */,
 				6121CCF21F2C2CA1009F04B2 /* main.m in Sources */,
+				7FD463A51F2D86A000696542 /* UIButton+NTYExtension.m in Sources */,
+				7FD463A61F2D86A000696542 /* UITableViewCell+NTYExtension.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
