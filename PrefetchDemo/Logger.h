@@ -71,7 +71,9 @@ void NSLogSetup();
 
 #else // if __has_include(<CocoaLumberjack / DDLog.h>)
 /// LOG
-#define __FILENAME__ ({char*ptr = strrchr(__FILE__, '/');if (ptr) {ptr++;} else {ptr = __FILE__;} ptr;})
+#ifndef __FILENAME__
+#define __FILENAME__ ({(strrchr(__FILE__, '/')?:(__FILE__ - 1)) + 1;})
+#endif // ifndef __FILENAME__
 
 /// LOG
 #define XCODE_COLORS_FG(color) @"\033[fg" color @";"

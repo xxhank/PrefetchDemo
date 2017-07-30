@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SASTableViewController.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : SASTableViewController
 
 
 @end

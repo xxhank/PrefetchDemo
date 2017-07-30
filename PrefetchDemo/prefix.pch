@@ -10,7 +10,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 //#import <JSONModel/JSONModel.h>
-//#import <Masonry/Masonry.h>
+#import <Masonry/Masonry.h>
 //#import <ReactiveObjC/RACEXTScope.h>
 //#import <ReactiveObjC/RACEXTKeyPathCoding.h>
 //#import "MobClick.h"
@@ -49,4 +49,7 @@
 //#import "SASRouter.h"
 
 //#import "Report.h"
+
+#define DQMEMD_TRACE_CHILDREN(...)
+#define DQ_F0F0F0 COLOR_HEX(0xF0F0F0)
 #endif /* ifdef __OBJC__ */

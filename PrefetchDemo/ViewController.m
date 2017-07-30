@@ -19,11 +19,11 @@
 #if USE_NATIVE
 <UITableViewDataSource, UITableViewDelegate>
 #endif // if USE_NATIVE
-@property (nonatomic, weak) IBOutlet UITableView                           *tableView;
+// @property (nonatomic, weak) IBOutlet UITableView                           *tableView;
 @property (nonatomic, strong) NSMutableArray<MoviePosterCellViewModelType> *movies;
 @property (nonatomic, assign) NSUInteger                                    pageIndex;
 @property (nonatomic, assign) BOOL                                          prefetching;
-@property (nonatomic, strong) NTYTableViewProxy                            *proxy;
+// @property (nonatomic, strong) NTYTableViewProxy                            *proxy;
 @end
 
 @implementation ViewController
