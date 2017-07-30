@@ -187,5 +187,7 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView*)tableView willDisplayCell:(UITableViewCell*)cell forRowAtIndexPath:(NSIndexPath*)indexPath {
     cell.backgroundColor = indexPath.row % 2? [UIColor whiteColor]:[UIColor grayColor];
+    MoviePosterCell *posterCell = [MoviePosterCell cast:cell];
+    posterCell.orderLabel.text = STRING(@"%@", @(indexPath.row + 1));
 };
 @end

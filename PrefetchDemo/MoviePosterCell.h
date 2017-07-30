@@ -17,4 +17,5 @@ typedef NSArray<MoviePosterCellViewModelType> MoviePosterCellViewModelArray;
 
 @interface MoviePosterCell : NTYTableViewCell<NTYSupportViewModel>
 @property (nonatomic, weak) IBOutlet UIImageView *posterView;
+@property (nonatomic, weak) IBOutlet UILabel     *orderLabel;
 @end
