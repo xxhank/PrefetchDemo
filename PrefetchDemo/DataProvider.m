@@ -7,6 +7,7 @@
 //
 
 #import "DataProvider.h"
+#import "Dispatch.h"
 
 @interface NSString (MoviePosterCellViewModel)<MoviePosterCellViewModel>
 
@@ -147,13 +148,15 @@
 
 const NSUInteger PageSize = 20;
 - (void)loadData:(NSUInteger)pageIndex completion:(void (^)(MoviePosterCellViewModelArray*urls))completion {
-    NSTimeInterval delayInSeconds = arc4random_uniform(20) + 1;
+    NSTimeInterval   delayInSeconds = arc4random_uniform(20) + 1;
     delayInSeconds /= 10.0;
-
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        NSUInteger pageSize = MIN(PageSize, self.urls.count - pageIndex * PageSize);
-        NSArray *movies = [self.urls subarrayWithRange:NSMakeRange(pageIndex * PageSize, pageSize)];
-        completion(movies);
+    dispatch_queue_t qeueu = dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0);
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC)), qeueu, ^{
+        [Dispatch ui:^{
+            NSUInteger pageSize = MIN(PageSize, self.urls.count - pageIndex * PageSize);
+            NSArray *movies = [self.urls subarrayWithRange:NSMakeRange(pageIndex * PageSize, pageSize)];
+            completion(movies);
+        }];
     });
 }
 
